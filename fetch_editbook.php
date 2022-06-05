@@ -3,7 +3,7 @@
 include_once('connects.php');
 $book_id = $_GET['book_id'];
 
-$query = "SELECT book_id, book_title, book_price FROM `book_table` WHERE book_id='".$book_id."'";
+$query = "SELECT book_id, book_title, book_price, book_img FROM `book_table` WHERE book_id='".$book_id."'";
 
 $check=mysqli_query($con,$query);
 $row=mysqli_num_rows($check);
