@@ -2,7 +2,7 @@
 
 include_once('connects.php');
 
-$query = "SELECT book_id, book_title, book_price FROM `book_table`";
+$query = "SELECT * FROM `book_table`";
 
 $check=mysqli_query($con,$query);
 $row=mysqli_num_rows($check);
